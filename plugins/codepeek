@@ -29,8 +29,8 @@ sub post_failure {
     if ( $token ) {
         $token = " -H 'X-PasteToken: $token'";
     }
-    #$app->diag("$curl$token --silent -F paste=\@$log http://localhost:3000/p/cpanminus\n");
-    $app->diag(`$curl$token --silent -F paste=\@$log http://localhost:3000/p/cpanminus`);
+    #$app->diag("$curl$token --silent -F paste=\@$log http://codepeek.com/p/cpanminus\n");
+    $app->diag(`$curl$token --silent -F paste=\@$log http://codepeek.com/p/cpanminus`);
     $app->diag("\nUse the above URL to get help with this failure.\n");
 
 };
